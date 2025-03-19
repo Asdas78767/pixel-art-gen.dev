@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>픽셀아트 생성기</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-center p-8">
+  <h2 class="text-2xl font-bold mb-4">🎨 AI 픽셀아트 생성기</h2>
+  <form id="generateForm" class="space-y-2 mb-6">
+    <input class="border p-2 rounded w-1/2" type="text" name="prompt" placeholder="프롬프트 입력" value="blue-haired warrior" /><br/>
+    <input class="border p-2 rounded w-1/2" type="number" name="num_frames" value="4" /><br/>
+    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded" type="submit">생성하기</button>
+  </form>
+  <div id="gallery" class="flex flex-wrap justify-center gap-4"></div>
+  <script src="app.js"></script>
+</body>
+</html>
